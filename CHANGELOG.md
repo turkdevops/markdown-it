@@ -6,15 +6,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [13.1.0] - WIP
-### Changed
+## [13.0.2] - 2023-09-26
+### Security
+- Fixed crash/infinite loop caused by linkify inline rule, #957.
+
+### Fixed
 - Throw an error if 3rd party plugin doesn't increment `line` or `pos` counters
   (previously, markdown-it would likely go into infinite loop instead), #847.
+
 
 ## [13.0.1] - 2022-05-03
 ### Fixed
 - Bumped `linkify-it` to 4.0.1. That should fix some hangs, caused by wrong
   data, returned from `linkify-it`.
+
 
 ## [13.0.0] - 2022-04-22
 ### Added
@@ -621,7 +626,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Renamed presets folder (configs -> presets).
 
 
-[13.1.0]: https://github.com/markdown-it/markdown-it/compare/13.0.1...13.1.0
+[13.0.2]: https://github.com/markdown-it/markdown-it/compare/13.0.1...13.0.2
 [13.0.1]: https://github.com/markdown-it/markdown-it/compare/13.0.0...13.0.1
 [13.0.0]: https://github.com/markdown-it/markdown-it/compare/12.3.2...13.0.0
 [12.3.2]: https://github.com/markdown-it/markdown-it/compare/12.3.1...12.3.2
